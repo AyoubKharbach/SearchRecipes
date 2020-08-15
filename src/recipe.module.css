@@ -1,0 +1,31 @@
+.recipe {
+  border-radius: 10px;
+  box-shadow: 0 2px 20px rgb(94, 94, 94);
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  min-width: 40%;
+  background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+.img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 25rem;
+  height: 20rem;
+}
+
+ol {
+  list-style: none;
+  counter-reset: steps;
+}
+ol li {
+  counter-increment: steps;
+}
+ol li::before {
+  content: "Step " counter(steps) ")";
+  margin-right: 0.5rem;
+  color: #ff6f00;
+}

@@ -1,0 +1,60 @@
+.App {
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  min-height: 100vh;
+}
+
+.search-form {
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  width: 50%;
+}
+.serach-button {
+  float: left;
+  width: 10%;
+  padding: 10px;
+  background-image: radial-gradient(
+    circle 248px at center,
+    #16d9e3 0%,
+    #30c7ec 47%,
+    #46aef7 100%
+  );
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0px 10px 10px 0px;
+}
+.serach-button:hover {
+  background: #0b7dda;
+}
+.search-form::active {
+  content: "";
+  clear: both;
+  display: table;
+}
+.recipe {
+  background-color: white;
+  box-shadow: lightslategray;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  border-bottom: lightslategray 1px solid;
+}
